@@ -1,0 +1,53 @@
+[build]
+  publish = "."
+
+[build.processing]
+  skip_processing = true
+
+[build.processing.html]
+  pretty_urls = false
+
+[[redirects]]
+  from = "/metody"
+  to = "/metody.html"
+  status = 200
+
+[[redirects]]
+  from = "/resursy"
+  to = "/resursy.html"
+  status = 200
+
+[[redirects]]
+  from = "/psiholog"
+  to = "/psiholog.html"
+  status = 200
+
+[[redirects]]
+  from = "/logoped"
+  to = "/logoped.html"
+  status = 200
+
+[[redirects]]
+  from = "/defektolog"
+  to = "/defektolog.html"
+  status = 200
+
+[[redirects]]
+  from = "/tetradi"
+  to = "/tetradi.html"
+  status = 200
+
+[[redirects]]
+  from = "/galereya"
+  to = "/galereya.html"
+  status = 200
+
+[[redirects]]
+  from = "/otzyvy"
+  to = "/otzyvy.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

@@ -1,0 +1,11 @@
+# Netlify rewrite rules: serve .html files directly without 404
+/metody          /metody.html      200
+/resursy         /resursy.html     200
+/psiholog        /psiholog.html    200
+/logoped         /logoped.html     200
+/defektolog      /defektolog.html  200
+/tetradi         /tetradi.html     200
+/galereya        /galereya.html    200
+/otzyvy          /otzyvy.html      200
+/admin           /admin/index.html 200
+/admin/          /admin/index.html 200

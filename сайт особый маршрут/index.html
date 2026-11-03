@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Главная — Особый маршрут</title>
+<meta name="description" content="Особый маршрут поддержки и развития обучающихся с безграничными возможностями: памятка для родителей, методы и подходы, специалисты сопровождения.">
+<meta property="og:title" content="Главная — Особый маршрут" />
+<meta property="og:description" content="Особый маршрут поддержки и развития обучающихся с безграничными возможностями: памятка для родителей, методы и подходы, специалисты сопровождения." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23E6F2EF'/><path d='M40 14c5.5 0 9 3.6 9 8.6 0 6.6-8 11.6-11.4 14.5-.9.8-2.3.8-3.2 0C31 34.2 23 29.2 23 22.6 23 17.6 26.5 14 32 14c1.7 0 3.1.7 4 1.8.9-1.1 2.3-1.8 4-1.8z' fill='%23D9622F'/></svg>">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+<header class="header">
+  <div class="wrap header__bar">
+    <a class="logo" href="index.html">
+      <svg class="logo__mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="lgm" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#2F7D6E"/><stop offset="1" stop-color="#D9622F"/>
+        </linearGradient></defs>
+        <circle cx="32" cy="32" r="30" fill="#E6F2EF"/>
+        <path d="M14 46c0-12 8-14 14-14s10-4 10-10" fill="none" stroke="url(#lgm)" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9"/>
+        <path d="M40 14c5.5 0 9 3.6 9 8.6 0 6.6-8 11.6-11.4 14.5-.9.8-2.3.8-3.2 0C31 34.2 23 29.2 23 22.6 23 17.6 26.5 14 32 14c1.7 0 3.1.7 4 1.8.9-1.1 2.3-1.8 4-1.8z" fill="#D9622F"/>
+        <circle cx="14" cy="46" r="5" fill="#2F7D6E"/>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name">Особый маршрут</span>
+        <span class="logo__sub">поддержки и развития обучающихся с безграничными возможностями</span>
+      </span>
+    </a>
+
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/>
+        </svg>
+        <span class="visually-hidden">Настройки отображения</span>
+      </button>
+      <a class="btn btn--accent header__cta" href="#zapis">Запись на консультацию</a>
+      <button type="button" class="icon-btn burger" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav" id="site-nav" aria-label="Основное меню">
+    <div class="wrap">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" aria-current="page">Главная</a></li><li><a class="nav__link" href="metody.html">Методы и подходы</a></li><li><a class="nav__link" href="resursy.html">Полезные ресурсы</a></li><li><a class="nav__link" href="psiholog.html">Психолог</a></li><li><a class="nav__link" href="logoped.html">Логопед</a></li><li><a class="nav__link" href="defektolog.html">Дефектолог</a></li><li><a class="nav__link" href="tetradi.html">Рабочие тетради</a></li><li><a class="nav__link" href="galereya.html">Интересные моменты</a></li><li><a class="nav__link" href="otzyvy.html">Отзывы родителей</a></li>
+        <li class="nav__cta"><a class="btn btn--accent btn--wide" href="#zapis">Запись на консультацию</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div class="a11y" id="a11y-panel">
+      <div class="a11y__group">
+        <span class="a11y__label" id="fs-label">Размер шрифта</span>
+        <div role="group" aria-labelledby="fs-label" style="display:flex;gap:6px">
+          <button type="button" class="a11y__btn" data-fs="1" aria-pressed="true">А</button>
+          <button type="button" class="a11y__btn" data-fs="1.15" aria-pressed="false" style="font-size:1.12em">А</button>
+          <button type="button" class="a11y__btn" data-fs="1.32" aria-pressed="false" style="font-size:1.28em">А</button>
+        </div>
+      </div>
+      <div class="a11y__group">
+        <span class="a11y__label">Контраст</span>
+        <button type="button" class="a11y__btn" id="contrast-toggle" aria-pressed="false">Версия для слабовидящих</button>
+      </div>
+      <div class="a11y__group">
+        <button type="button" class="a11y__btn" id="a11y-reset">Сбросить</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Секция: Герой -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <span class="eyebrow" id="hero-eyebrow">Многостраничный сайт</span>
+        <h1 class="hero__title" id="hero-title">Особый маршрут поддержки и развития обучающихся с безграничными возможностями</h1>
+        <p class="lead" id="hero-subtitle">поддержки и развития обучающихся с безграничными возможностями</p>
+        <div class="hero__actions">
+          <a class="btn" href="#pamyatka">Памятка для родителей</a>
+          <a class="btn btn--ghost" href="metody.html">Методы и подходы</a>
+        </div>
+      </div>
+      <div class="hero__art" id="hero-art">
+        <div class="slot slot--wide">
+          <span class="slot__art" aria-hidden="true">📸</span>
+          <span class="slot__title">Блок фото обучающихся</span>
+          <p class="slot__hint">Главное фото добавляется в админке.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция: Обучающиеся -->
+  <section class="section section--tint" aria-labelledby="students-title">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow" id="students-eyebrow">Фото и про обучающихся</span>
+        <h2 id="students-title">Наши обучающиеся</h2>
+      </div>
+      <div id="students-photos" style="margin-bottom:var(--gap)">
+        <div class="empty">
+          <span class="empty__art" aria-hidden="true">📷</span>
+          <p class="empty__title">Фотографии обучающихся</p>
+          <p class="empty__hint">Снимки и фоторепортажи с занятий загружаются в админке.</p>
+        </div>
+      </div>
+      <div id="students-text">
+        <p class="lead">Каждый ребенок уникален, и в каждом есть свои сильные стороны, таланты и безграничные возможности для развития и познания мира.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция: Разделы сайта -->
+  <section class="section" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <span class="eyebrow" id="about-eyebrow">О чём сайт</span>
+        <h2 id="about-title">Разделы сайта</h2>
+      </div>
+      <div id="about-text" style="margin-bottom:var(--gap)">
+        <div class="prose">
+          <p class="lead">На сайте собраны ключевые материалы и инструменты для родителей детей с ОВЗ: практические методики, онлайн-навигатор полезных ресурсов, персональные страницы специалистов сопровождения и каталог рабочих тетрадей.</p>
+        </div>
+      </div>
+      <nav class="toc" id="about-toc" aria-label="Разделы сайта">
+        <a class="toc__link tone-1" href="metody.html"><span class="toc__ico" aria-hidden="true">🧠</span>Методы и подходы</a>
+        <a class="toc__link tone-2" href="resursy.html"><span class="toc__ico" aria-hidden="true">🧭</span>Полезные ресурсы</a>
+        <a class="toc__link tone-3" href="psiholog.html"><span class="toc__ico" aria-hidden="true">💬</span>Психолог: поддержка и помощь</a>
+        <a class="toc__link tone-4" href="logoped.html"><span class="toc__ico" aria-hidden="true">🗣️</span>Логопед рядом</a>
+        <a class="toc__link tone-5" href="defektolog.html"><span class="toc__ico" aria-hidden="true">📘</span>Дефектолог: шаг к успеху</a>
+        <a class="toc__link tone-6" href="tetradi.html"><span class="toc__ico" aria-hidden="true">📗</span>Рабочие тетради</a>
+        <a class="toc__link tone-1" href="galereya.html"><span class="toc__ico" aria-hidden="true">📸</span>Интересные моменты</a>
+        <a class="toc__link tone-2" href="otzyvy.html"><span class="toc__ico" aria-hidden="true">⭐</span>Отзывы родителей</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Секция: Девиз -->
+  <section class="wrap" aria-labelledby="motto-label">
+    <div class="motto">
+      <span class="motto__label" id="motto-label">Девиз</span>
+      <p class="motto__text" id="motto-text">«Любовь открывает в ребенке силы, а вера в него помогает раскрыть безграничные возможности»</p>
+    </div>
+  </section>
+
+  <!-- Секция: Памятка -->
+  <section class="section" id="pamyatka" aria-labelledby="memo-title">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow" id="memo-eyebrow">Памятка</span>
+        <h2 id="memo-title">Памятка для родителей детей с ОВЗ</h2>
+        <p class="lead" id="memo-intro">Поддержка семьи — важная часть успешного обучения и развития ребенка. Спокойная, доброжелательная и последовательная помощь взрослых создает условия для уверенности, устойчивости и постепенного продвижения</p>
+      </div>
+      <p style="margin-bottom:1.2em">
+        <button type="button" class="btn btn--ghost" data-acc-all="memo-acc" data-state="closed">Развернуть все</button>
+      </p>
+      <div class="acc" id="memo-acc">
+        <div class="acc__item tone-1">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-1" aria-expanded="true" aria-controls="memo-1-p">
+              <span class="acc__emoji" aria-hidden="true">🕒</span>
+              <span>Режим дня</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-1-p" role="region" aria-labelledby="memo-1">
+            <p>Соблюдайте привычный распорядок дня. Постоянство помогает ребенку чувствовать себя спокойнее и увереннее.</p>
+          </div>
+        </div>
+
+        <div class="acc__item tone-2">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-2" aria-expanded="false" aria-controls="memo-2-p">
+              <span class="acc__emoji" aria-hidden="true">🧩</span>
+              <span>Понятные инструкции</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-2-p" role="region" aria-labelledby="memo-2" hidden>
+            <p>Давайте короткие и четкие задания, при необходимости делите их на маленькие шаги.</p>
+          </div>
+        </div>
+
+        <div class="acc__item tone-3">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-3" aria-expanded="false" aria-controls="memo-3-p">
+              <span class="acc__emoji" aria-hidden="true">🖼️</span>
+              <span>Наглядность</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-3-p" role="region" aria-labelledby="memo-3" hidden>
+            <p>Используйте картинки, схемы, карточки и образцы выполнения заданий.</p>
+          </div>
+        </div>
+
+        <div class="acc__item tone-4">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-4" aria-expanded="false" aria-controls="memo-4-p">
+              <span class="acc__emoji" aria-hidden="true">🌟</span>
+              <span>Поддержка и похвала</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-4-p" role="region" aria-labelledby="memo-4" hidden>
+            <p>Отмечайте старание ребенка и хвалите его за даже небольшие успехи.</p>
+            <p>Помогайте ребенку только там, где это действительно необходимо, и постепенно развивайте его самостоятельность.</p>
+          </div>
+        </div>
+
+        <div class="acc__item tone-5">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-5" aria-expanded="false" aria-controls="memo-5-p">
+              <span class="acc__emoji" aria-hidden="true">💬</span>
+              <span>Спокойное общение</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-5-p" role="region" aria-labelledby="memo-5" hidden>
+            <p>Говорите с ребенком уважительно, спокойно и доброжелательно, чаще беседуйте с ним.</p>
+          </div>
+        </div>
+
+        <div class="acc__item tone-6">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-6" aria-expanded="false" aria-controls="memo-6-p">
+              <span class="acc__emoji" aria-hidden="true">🤝</span>
+              <span>Взаимодействие со школой</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-6-p" role="region" aria-labelledby="memo-6" hidden>
+            <p>Поддерживайте связь с классным руководителем и специалистами сопровождения: психологом, логопедом и дефектологом.</p>
+          </div>
+        </div>
+
+        <div class="acc__item tone-1">
+          <h3 style="margin:0">
+            <button type="button" class="acc__btn" id="memo-7" aria-expanded="false" aria-controls="memo-7-p">
+              <span class="acc__emoji" aria-hidden="true">❤️</span>
+              <span>Вера в возможности ребенка</span>
+              <svg class="acc__chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="acc__panel" id="memo-7-p" role="region" aria-labelledby="memo-7" hidden>
+            <p>Помните: каждый ребенок развивается в своем темпе, а поддержка семьи помогает ему двигаться вперед.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer" id="podval">
+  <div class="wrap">
+    <div class="footer__grid">
+      <section id="zapis" aria-labelledby="zapis-title">
+        <h2 id="zapis-title">Запись на консультацию</h2>
+        <p class="footer__note">Выберите специалиста и оставьте контакты — с вами свяжутся, чтобы согласовать время.</p>
+        <form class="form" id="consult-form" novalidate>
+          <div class="field" data-field="spec">
+            <label class="field__label" for="f-spec">Специалист <span class="field__req" aria-hidden="true">*</span></label>
+            <select class="field__control" id="f-spec" name="spec" required aria-describedby="e-spec">
+              <option value="">— выберите специалиста —</option>
+              <option value="Педагог-психолог">Педагог-психолог</option><option value="Школьный логопед">Школьный логопед</option><option value="Школьный дефектолог">Школьный дефектолог</option><option value="Классный руководитель">Классный руководитель</option>
+            </select>
+            <p class="field__error" id="e-spec" hidden>Пожалуйста, выберите специалиста.</p>
+          </div>
+
+          <div class="form__row">
+            <div class="field" data-field="name">
+              <label class="field__label" for="f-name">Ваше имя <span class="field__req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="f-name" name="name" type="text" required autocomplete="name" placeholder="Имя и фамилия" aria-describedby="e-name">
+              <p class="field__error" id="e-name" hidden>Укажите, пожалуйста, имя.</p>
+            </div>
+            <div class="field" data-field="contact">
+              <label class="field__label" for="f-contact">Телефон или e-mail <span class="field__req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="f-contact" name="contact" type="text" required placeholder="+7 ___ ___-__-__" aria-describedby="e-contact">
+              <p class="field__error" id="e-contact" hidden>Укажите телефон или e-mail для связи.</p>
+            </div>
+          </div>
+
+          <div class="field" data-field="message">
+            <label class="field__label" for="f-message">Вопрос (по желанию)</label>
+            <textarea class="field__control" id="f-message" name="message" placeholder="Коротко опишите, с чем нужна помощь"></textarea>
+          </div>
+
+          <button class="btn btn--light btn--wide" type="submit">Отправить заявку</button>
+          <p class="form__status" id="form-status" role="status" hidden></p>
+        </form>
+      </section>
+
+      <section aria-labelledby="svyaz-title">
+        <h2 id="svyaz-title">Мы на связи</h2>
+        <ul class="social">
+          <li><a class="social__link" href="https://vk.com" target="_blank" rel="noopener noreferrer">
+      <span class="social__ico" aria-hidden="true">ВК</span>
+      <span class="social__meta">ВК психолога<span>Адрес страницы добавляется при наполнении</span></span>
+    </a></li><li><a class="social__link" href="https://vk.com" target="_blank" rel="noopener noreferrer">
+      <span class="social__ico" aria-hidden="true">ВК</span>
+      <span class="social__meta">ВК дефектолога<span>Адрес страницы добавляется при наполнении</span></span>
+    </a></li><li><a class="social__link" href="https://max.ru" target="_blank" rel="noopener noreferrer">
+      <span class="social__ico" aria-hidden="true">MAX</span>
+      <span class="social__meta">МАХ<span>Адрес чата добавляется при наполнении</span></span>
+    </a></li>
+        </ul>
+
+        <hr class="divider" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.2)">
+
+        <h3 style="color:#fff">Разделы сайта</h3>
+        <ul class="footer__map">
+          <li><a href="index.html" aria-current="page">Главная</a></li><li><a href="metody.html">Методы и подходы</a></li><li><a href="resursy.html">Полезные ресурсы</a></li><li><a href="psiholog.html">Психолог: поддержка и помощь</a></li><li><a href="logoped.html">Логопед рядом</a></li><li><a href="defektolog.html">Дефектолог: шаг к успеху</a></li><li><a href="tetradi.html">Рабочие тетради</a></li><li><a href="galereya.html">Интересные моменты</a></li><li><a href="otzyvy.html">Отзывы родителей</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer__bottom">
+      <span>Особый маршрут поддержки и развития обучающихся с безграничными возможностями</span>
+      <span><a href="admin/index.html" style="color:rgba(255,255,255,0.85);text-decoration:underline;">⚙️ Управление сайтом (Админка)</a></span>
+      <span>Особый маршрут</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/data/content.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

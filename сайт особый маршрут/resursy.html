@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Полезные ресурсы — Особый маршрут</title>
+<meta name="description" content="Информационный навигатор для родителей: упражнения, обучающие материалы, игры и документы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23E6F2EF'/><path d='M40 14c5.5 0 9 3.6 9 8.6 0 6.6-8 11.6-11.4 14.5-.9.8-2.3.8-3.2 0C31 34.2 23 29.2 23 22.6 23 17.6 26.5 14 32 14c1.7 0 3.1.7 4 1.8.9-1.1 2.3-1.8 4-1.8z' fill='%23D9622F'/></svg>">
+</head>
+<body data-page="resources">
+<a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+<header class="header">
+  <div class="wrap header__bar">
+    <a class="logo" href="index.html">
+      <svg class="logo__mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="lgm" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#2F7D6E"/><stop offset="1" stop-color="#D9622F"/>
+        </linearGradient></defs>
+        <circle cx="32" cy="32" r="30" fill="#E6F2EF"/>
+        <path d="M14 46c0-12 8-14 14-14s10-4 10-10" fill="none" stroke="url(#lgm)" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9"/>
+        <path d="M40 14c5.5 0 9 3.6 9 8.6 0 6.6-8 11.6-11.4 14.5-.9.8-2.3.8-3.2 0C31 34.2 23 29.2 23 22.6 23 17.6 26.5 14 32 14c1.7 0 3.1.7 4 1.8.9-1.1 2.3-1.8 4-1.8z" fill="#D9622F"/>
+        <circle cx="14" cy="46" r="5" fill="#2F7D6E"/>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name">Особый маршрут</span>
+        <span class="logo__sub">поддержки и развития обучающихся с безграничными возможностями</span>
+      </span>
+    </a>
+
+    <div class="header__actions">
+      <button type="button" class="icon-btn" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/>
+        </svg>
+        <span class="visually-hidden">Настройки отображения</span>
+      </button>
+      <a class="btn btn--accent header__cta" href="#zapis">Запись на консультацию</a>
+      <button type="button" class="icon-btn burger" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav" id="site-nav" aria-label="Основное меню">
+    <div class="wrap">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Главная</a></li><li><a class="nav__link" href="metody.html">Методы и подходы</a></li><li><a class="nav__link" href="resursy.html" aria-current="page">Полезные ресурсы</a></li><li><a class="nav__link" href="psiholog.html">Психолог</a></li><li><a class="nav__link" href="logoped.html">Логопед</a></li><li><a class="nav__link" href="defektolog.html">Дефектолог</a></li><li><a class="nav__link" href="tetradi.html">Рабочие тетради</a></li><li><a class="nav__link" href="galereya.html">Интересные моменты</a></li><li><a class="nav__link" href="otzyvy.html">Отзывы родителей</a></li>
+        <li class="nav__cta"><a class="btn btn--accent btn--wide" href="#zapis">Запись на консультацию</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div class="a11y" id="a11y-panel">
+      <div class="a11y__group">
+        <span class="a11y__label" id="fs-label">Размер шрифта</span>
+        <div role="group" aria-labelledby="fs-label" style="display:flex;gap:6px">
+          <button type="button" class="a11y__btn" data-fs="1" aria-pressed="true">А</button>
+          <button type="button" class="a11y__btn" data-fs="1.15" aria-pressed="false" style="font-size:1.12em">А</button>
+          <button type="button" class="a11y__btn" data-fs="1.32" aria-pressed="false" style="font-size:1.28em">А</button>
+        </div>
+      </div>
+      <div class="a11y__group">
+        <span class="a11y__label">Контраст</span>
+        <button type="button" class="a11y__btn" id="contrast-toggle" aria-pressed="false">Версия для слабовидящих</button>
+      </div>
+      <div class="a11y__group">
+        <button type="button" class="a11y__btn" id="a11y-reset">Сбросить</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="section" aria-labelledby="page-title">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">Раздел сайта</span>
+        <h1 id="page-title">Полезные ресурсы</h1>
+        <p class="lead" id="page-lead">Информационный навигатор для родителей</p>
+      </div>
+
+      <div class="filters" id="res-filters" data-filter-group="res-grid" role="group" aria-label="Фильтр ресурсов">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">Все</button><button type="button" class="chip" data-filter="uprazhnenie" aria-pressed="false">Упражнения</button><button type="button" class="chip" data-filter="obuchenie" aria-pressed="false">Обучение</button><button type="button" class="chip" data-filter="igra" aria-pressed="false">Игры</button><button type="button" class="chip" data-filter="dokument" aria-pressed="false">Документы</button><span class="lead" style="margin-left:auto;align-self:center">Показано: <b data-filter-count="res-grid">7</b></span>
+      </div>
+      <div class="grid grid--3" id="res-grid">
+        <a class="card card--hover res tone-1" data-kind="uprazhnenie" href="https://tubular-sunflower-147a84.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">🌬️</span>
+          <p class="res__title">резонансное дыхание. Дышите и успокаивайтесь</p>
+          <p class="res__url">tubular-sunflower-147a84.netlify.app</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a><a class="card card--hover res tone-2" data-kind="uprazhnenie" href="https://lucent-kashata-694245.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">👀</span>
+          <p class="res__title">зрительная гимнастика «Космический след»</p>
+          <p class="res__url">lucent-kashata-694245.netlify.app</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a><a class="card card--hover res tone-3" data-kind="obuchenie" href="https://brilliant-stroopwafel-b5c20e.netlify.app/test.html" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">✅</span>
+          <p class="res__title">ТЕСТ ПРОВЕРОЧНЫЙ</p>
+          <p class="res__url">brilliant-stroopwafel-b5c20e.netlify.app/test.html</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a><a class="card card--hover res tone-4" data-kind="obuchenie" href="https://dreamy-brioche-7bdc08.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">🔤</span>
+          <p class="res__title">повторим алфавит</p>
+          <p class="res__url">dreamy-brioche-7bdc08.netlify.app</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a><a class="card card--hover res tone-5" data-kind="dokument" href="https://ais-pre-ysmwikp54geghyywnj2eta-80443903133.us-west1.run.app/admin" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">📄</span>
+          <p class="res__title">заявление о пропуске</p>
+          <p class="res__url">ais-pre-ysmwikp54geghyywnj2eta-80443903133.us-west1.run.app/admin</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a><a class="card card--hover res tone-6" data-kind="igra" href="https://gleaming-hummingbird-acb481.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">🧑‍🤝‍🧑</span>
+          <p class="res__title">игра одноклассники</p>
+          <p class="res__url">gleaming-hummingbird-acb481.netlify.app</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a><a class="card card--hover res tone-1" data-kind="igra" href="https://lucent-fox-891f44.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <span class="res__badge" aria-hidden="true">👨‍👩‍👧</span>
+          <p class="res__title">игра семья</p>
+          <p class="res__url">lucent-fox-891f44.netlify.app</p>
+          <span class="res__go">Открыть <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></span>
+        </a>
+      </div>
+
+      <p class="note" id="res-note" style="margin-top:var(--gap)">
+        <span aria-hidden="true">ℹ️</span><span data-note>Все ресурсы навигатора открываются в новой вкладке.</span>
+      </p>
+    </div>
+  </section>
+</main>
+<footer class="footer" id="podval">
+  <div class="wrap">
+    <div class="footer__grid">
+      <section id="zapis" aria-labelledby="zapis-title">
+        <h2 id="zapis-title">Запись на консультацию</h2>
+        <p class="footer__note">Выберите специалиста и оставьте контакты — с вами свяжутся, чтобы согласовать время.</p>
+        <form class="form" id="consult-form" novalidate>
+          <div class="field" data-field="spec">
+            <label class="field__label" for="f-spec">Специалист <span class="field__req" aria-hidden="true">*</span></label>
+            <select class="field__control" id="f-spec" name="spec" required aria-describedby="e-spec">
+              <option value="">— выберите специалиста —</option>
+              <option value="Педагог-психолог">Педагог-психолог</option><option value="Школьный логопед">Школьный логопед</option><option value="Школьный дефектолог">Школьный дефектолог</option><option value="Классный руководитель">Классный руководитель</option>
+            </select>
+            <p class="field__error" id="e-spec" hidden>Пожалуйста, выберите специалиста.</p>
+          </div>
+
+          <div class="form__row">
+            <div class="field" data-field="name">
+              <label class="field__label" for="f-name">Ваше имя <span class="field__req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="f-name" name="name" type="text" required autocomplete="name" placeholder="Имя и фамилия" aria-describedby="e-name">
+              <p class="field__error" id="e-name" hidden>Укажите, пожалуйста, имя.</p>
+            </div>
+            <div class="field" data-field="contact">
+              <label class="field__label" for="f-contact">Телефон или e-mail <span class="field__req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="f-contact" name="contact" type="text" required placeholder="+7 ___ ___-__-__" aria-describedby="e-contact">
+              <p class="field__error" id="e-contact" hidden>Укажите телефон или e-mail для связи.</p>
+            </div>
+          </div>
+
+          <div class="field" data-field="message">
+            <label class="field__label" for="f-message">Вопрос (по желанию)</label>
+            <textarea class="field__control" id="f-message" name="message" placeholder="Коротко опишите, с чем нужна помощь"></textarea>
+          </div>
+
+          <button class="btn btn--light btn--wide" type="submit">Отправить заявку</button>
+          <p class="form__status" id="form-status" role="status" hidden></p>
+        </form>
+      </section>
+
+      <section aria-labelledby="svyaz-title">
+        <h2 id="svyaz-title">Мы на связи</h2>
+        <ul class="social">
+          <li><a class="social__link" href="https://vk.com" target="_blank" rel="noopener noreferrer">
+      <span class="social__ico" aria-hidden="true">ВК</span>
+      <span class="social__meta">ВК психолога<span>Адрес страницы добавляется при наполнении</span></span>
+    </a></li><li><a class="social__link" href="https://vk.com" target="_blank" rel="noopener noreferrer">
+      <span class="social__ico" aria-hidden="true">ВК</span>
+      <span class="social__meta">ВК дефектолога<span>Адрес страницы добавляется при наполнении</span></span>
+    </a></li><li><a class="social__link" href="https://max.ru" target="_blank" rel="noopener noreferrer">
+      <span class="social__ico" aria-hidden="true">MAX</span>
+      <span class="social__meta">МАХ<span>Адрес чата добавляется при наполнении</span></span>
+    </a></li>
+        </ul>
+
+        <hr class="divider" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.2)">
+
+        <h3 style="color:#fff">Разделы сайта</h3>
+        <ul class="footer__map">
+          <li><a href="index.html">Главная</a></li><li><a href="metody.html">Методы и подходы</a></li><li><a href="resursy.html" aria-current="page">Полезные ресурсы</a></li><li><a href="psiholog.html">Психолог: поддержка и помощь</a></li><li><a href="logoped.html">Логопед рядом</a></li><li><a href="defektolog.html">Дефектолог: шаг к успеху</a></li><li><a href="tetradi.html">Рабочие тетради</a></li><li><a href="galereya.html">Интересные моменты</a></li><li><a href="otzyvy.html">Отзывы родителей</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer__bottom">
+      <span>Особый маршрут поддержки и развития обучающихся с безграничными возможностями</span>
+      <span><a href="admin/index.html" style="color:rgba(255,255,255,0.85);text-decoration:underline;">⚙️ Управление сайтом (Админка)</a></span>
+      <span>Особый маршрут</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/data/content.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
